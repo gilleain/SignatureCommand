@@ -22,7 +22,7 @@ public class App {
 			int height = argumentHandler.getHeight();
 			for (SymmetryClass symmetryClass :  signature.getSymmetryClasses(height)) {
 				List<Integer> elements = new ArrayList<>();
-				for (int element : symmetryClass) { elements.add(element + 1); }
+				for (int element : symmetryClass) { elements.add(element); }
 				System.out.println(elements + " " + symmetryClass.getSignatureString());
 			}
 		}
